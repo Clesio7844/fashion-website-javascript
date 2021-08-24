@@ -43,6 +43,13 @@ body {
   background: #eee;
 }
 
+body.active {
+  --white-color: #111;
+  --black-color: #fff;
+  --light-color: rgba(255, 255, 255, 0.3);
+  background: #222;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -121,6 +128,73 @@ header.active {
   top: 0;
   left: 0;
   z-index: 100;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -120%;
+  height: 100%;
+  background: var(--white-color);
+  padding: 3rem;
+  width: 30rem;
+}
+
+.navbar.active {
+  left: 0;
+  box-shadow: 0 0 0 100vw var(--light-color);
+}
+
+.navbar .user {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.navbar .user img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  border: 0.5rem solid var(--white-color);
+  object-fit: cover;
+  box-shadow: 5rem 2rem 0 -3rem var(--orange), -5rem -2rem 0 -3rem var(--orange);
+  /* 0 0.5rem 1rem rgba(0, 0, 0, 0.1); */
+}
+
+.navbar .user h3 {
+  padding-top: 0.5rem;
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.navbar .links a {
+  display: block;
+  border-bottom: 0.1rem solid var(--light-color);
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: var(--black-color);
+}
+
+.navbar .links a:last-child {
+  border: none;
+}
+
+.navbar .links a:hover {
+  letter-spacing: 0.2rem;
+  color: var(--orange);
+}
+
+.navbar #close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  color: var(--black-color);
+}
+
+.navbar #close:hover {
+  color: var(--orange);
 }
 
 /*media queries*/
