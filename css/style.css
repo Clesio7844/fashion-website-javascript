@@ -90,3 +90,67 @@ header form label {
   color: var(--white-color);
   cursor: pointer;
 }
+
+header form label:hover {
+  color: var(--orange);
+}
+
+header .icons div,
+header .icons a {
+  height: 4rem;
+  width: 4rem;
+  font-size: 1.7rem;
+  line-height: 4rem;
+  background: var(--black-color);
+  color: var(--white-color);
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 0.7rem;
+}
+
+header .icons div:hover,
+header .icons a:hover {
+  background: var(--orange);
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+header.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/*media queries*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-flow: column;
+  }
+
+  header form {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  header.active {
+    transform: translateY(-12.5rem);
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
