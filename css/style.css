@@ -168,6 +168,7 @@ header.active {
   position: fixed;
   top: 0;
   left: -120%;
+  z-index: 1000;
   height: 100%;
   background: var(--white-color);
   padding: 3rem;
@@ -305,6 +306,97 @@ header.active {
   padding-top: 0.5rem;
 }
 
+.products .product-slider .slide {
+  overflow: hidden;
+  position: relative;
+  border: 0.1rem solid var(--light-color);
+  border-radius: 0.5rem;
+  background: var(--white-color);
+}
+
+.products .product-slider .slide .image {
+  padding: 1rem;
+}
+
+.products .product-slider .slide .image img {
+  height: 50rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.products .product-slider .slide .content {
+  padding: 2rem;
+  border-top: 0.1rem solid var(--light-color);
+}
+
+.products .product-slider .slide .icons {
+  position: absolute;
+  top: 0;
+  right: -7rem;
+}
+
+.products .product-slider .slide:hover .icons {
+  right: 1rem;
+}
+
+.products .product-slider .slide .icons a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: var(--black-color);
+  color: var(--white-color);
+  display: block;
+  margin-top: 1rem;
+}
+
+.products .product-slider .slide .icons a:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
+.products .product-slider .slide .content .stars i {
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+.products .product-slider .slide .content .stars span {
+  font-size: 2rem;
+  color: var(--black-color);
+  font-weight: 300;
+}
+
+.products .product-slider .slide .content h3 {
+  color: var(--black-color);
+  font-weight: normal;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.products .product-slider .slide .content .price span {
+  color: var(--orange);
+  font-weight: bolder;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.products .product-slider .slide .content .price span {
+  color: var(--black-color);
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-decoration: inherit;
+}
+
+.products .product-slider .swiper-button-next,
+.products .product-slider .swiper-button-prev {
+  color: var(--black-color);
+}
+
+.products .gap {
+  margin-bottom: 2rem;
+}
 /*media queries*/
 @media (max-width: 991px) {
   html {
