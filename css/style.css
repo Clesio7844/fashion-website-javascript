@@ -483,6 +483,60 @@ header.active {
   font-weight: 300;
 }
 
+.deal .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  text-align: center;
+  border: 0.1rem solid var(--light-color);
+  background: var(--white-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.deal .row .content {
+  flex: 1 1 40rem;
+  padding: 1rem;
+}
+
+.deal .row .image {
+  flex: 1 1 40rem;
+  padding: 1rem;
+}
+
+.deal .row .image img {
+  width: 100%;
+}
+
+.deal .row .discount {
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+.deal .row .text {
+  font-size: 4rem;
+  color: var(--black-color);
+  padding: 0.5rem 0;
+}
+
+.deal .row .count-down {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.deal .row .count-down h3 {
+  color: var(--orange);
+  font-size: 4rem;
+}
+
+.deal .row .count-down span {
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+
 /*media queries*/
 @media (max-width: 991px) {
   html {
